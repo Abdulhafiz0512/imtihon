@@ -1,0 +1,28 @@
+.btn-light{
+    @extend %buttonStyleDark;
+}
+
+.btn-ligth{
+    &:hover{
+        @extend %buttonStyleHoverDark;
+    }
+    &:active{
+        @extend %buttonStyleActiveDark;
+    }
+}
+
+.btn-dark{
+    @extend %buttonStyleLight;
+    
+}
+
+.btn-dark{
+    &:hover{
+        @extend %buttonStyleHoverLight;
+    }
+    &:active{
+        @extend %buttonStyleActiveLight;
+    }
+}
+
+

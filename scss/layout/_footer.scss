@@ -1,0 +1,23 @@
+footer{
+    height: 68px;
+    background-color: $light-50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 16px;
+        height: 16px;
+    }
+}
+@media (prefers-color-scheme: dark){
+    footer{
+      background-color:    #111827;
+      
+      
+      
+      
+    p{
+        color: white;
+    }
+    }
+  }

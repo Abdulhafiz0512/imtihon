@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    *{
+      h4{
+        color: white;
+      }
+      h1{
+        color: white;
+      }
+      h2{
+        color: white;
+      }
+      .subtitle{
+        color: white;
+      }
+      .body2{
+        color: white;
+      }
+      .body3{
+        color: white;
+      }
+      .tag{
+        background-color: #E5E7EB;
+        .body3{
+          color: #1F2937;
+
+        }
+
+      }
+    }
+        
+  }

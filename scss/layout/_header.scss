@@ -1,0 +1,77 @@
+header {
+  height: 68px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+  .container{
+    margin-top: 15px;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .wrapper {
+         display: flex;
+         gap: 24px;
+         align-items: center;
+  
+        ul {
+          display: flex;
+          gap: 24px;
+  
+          .divider {
+  
+            
+            border: 1px 0px 0px 0px, solid, $dark-950;
+  
+  
+  
+          }
+  
+  
+  
+        }
+  
+        .actions {
+          display: flex;
+          gap: 20px;
+  
+          button {
+            a{
+              text-decoration: none;
+              color:white;
+              .body2 {
+                padding: 6px 16px 6px 16px;
+              }
+            }
+            
+  
+          }
+        }
+      }
+    }
+  
+  }
+}
+@media only screen and (max-width:375px) {
+    header{
+      
+        .container{
+          nav{
+            h4{
+              font-size: 20px;
+            }
+            .wrapper{
+              display: none;
+            
+            
+      }
+    }
+  
+}}}
+@media (prefers-color-scheme: dark) {
+  header{
+    background-color: #030712;
+    
+  } 
+}

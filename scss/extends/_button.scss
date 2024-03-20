@@ -1,0 +1,36 @@
+// dark
+%buttonStyleDark{
+    
+    border-radius: 12px;
+    border: none;
+    background-color: $dark-900;
+    color:$default-light;
+}
+
+%buttonStyleHoverDark{
+    background-color:$dark-700;
+    
+}
+
+%buttonStyleActiveDark{
+    background-color: $dark-800;
+}
+
+// light
+%buttonStyleLight{
+    border: none;
+    border-radius: 12px;
+   
+    background-color: $light-900;
+    color:$default-light;
+}
+
+%buttonStyleHoverLight{
+    background-color:$light-700;
+    
+}
+
+%buttonStyleActiveLight{
+    background-color: $light-800;
+}
+

@@ -1,0 +1,116 @@
+#hero {
+    
+    .container {
+        padding-top: 96px;
+    padding-bottom: 96px;
+         display: flex;
+         flex-direction: row;
+         
+        .column_left {
+            max-width: 768px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            
+
+            .context {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .body2{
+                    font-size: 16px;
+                }
+            }
+
+            .group {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .location {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+
+                .hire {
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 21px;
+                }
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+
+        .column_right {
+            max-width: 400px;
+            
+            img {
+                position: absolute;
+                padding-left: 80px;
+                z-index: 1;
+                &:hover{
+                    transform: translateX(40px);
+                    margin-top: 40px;
+                    transition: all 1.2s;
+                }
+            }
+
+            .back_image {
+                left: 120px;
+                top:40px;
+                position: relative;
+                width: 280px;
+                height: 320px;
+                
+                background-color: $light-200;
+                border: 8px 0px 0px 0px;
+                opacity: 0px;
+
+            }
+        }
+    }
+}
+@media only screen and (max-width:375px) {
+    #hero{
+        .container{
+            flex-direction: column;
+
+            .column-right{
+                order:1;
+                img{
+                    padding-right: 0px;
+                }
+                .back_image{
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+            .column_left{
+                padding-top: 60px;
+                order:2;
+            }
+        }
+    }
+    
+}
+@media (prefers-color-scheme: dark){
+    #hero{
+        background-color: #030712;
+        .container{
+            .column_left{
+                .group{
+                    img{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
